@@ -4,142 +4,134 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(203, 236, 253);
+    background-color: black;
     font-family: "Hanken Grotesk", sans-serif;
+    color: aliceblue;
    
 }
 .container{
     width: 1140px;
     margin: auto;
+    border-right: .1px solid whitesmoke;
+    border-left: .1px solid whitesmoke;
+    line-height:1.8;
+    padding-inline: 1rem;
 }
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
     line-height: 4;
+    padding-inline: 2rem;
+    border-bottom:.5px solid white;
+ 
 }
 h1{
     font-size: 24px;
+    /* background-color: aliceblue; */
+    background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+.side-btn {
+
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 1rem;
+ 
 }
 .side-btn input{
-    border: 1px solid rgb(234, 231, 231);
+  
     padding: 1rem;
     border-radius: 20px;
     width: 20%;
-}
-.side-btn {
-  
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 1rem;
+    background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
 }
 a{
-    color: black;
+    background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
 }
-/* main{
+
+.balance{
+ 
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     margin-top: 3rem;
-} */
-/* .balance{
+
+}
+.balance .bal_label{
+    font-size: 1.5rem;
+    font-weight: 700;
+    /* background-color: azure; */
+}
+
+.balance .bal_val{
     font-size: 2rem;
+    font-weight: 700;
+    /* background-color: blanchedalmond; */
 }
-.grid-container{
-    display: grid;
-   grid:auto-flow / 1fr 1fr ; 
-   border-color: blue;
-   background-color: bisque;
-   grid-auto-rows: max-content(574px,auto);
-}
-.grid-container .grid-item {
-    grid-column: span 1;
-  }
-   */
-   .block{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    gap: 10px;
-    padding: 20px;
-}
+section{
+    margin-top: 1rem;
 
-.transactions {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap:2rem;
+   
 }
-
-.transaction {
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+section .mov{
+    flex: 50%;
 }
-
-.deposit {
-    background-color: #8BC34A;
-    color: white;
-}
-
-.withdrawal {
-    background-color: #F44336;
-    color: white;
-}
-
-.main-content {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.transfer-money, .request-loan, .close-account {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-}
-
-.transfer-money {
-    background-color: #FFC107;
-}
-
-.request-loan {
-    background-color: #4CAF50;
-}
-
-.close-account {
-    background-color: #F44336;
-}
-
-.transfer-money input, .request-loan input, .close-account input {
-    margin: 5px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.footer {
+section .mov_row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    grid-column: span 2;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
+    margin-top: 1rem;
 }
+section .mov_row .mov_type--deposit{
+    padding: .2rem .8rem;
+    background-color: rgb(98, 160, 5);
+    border-radius: 30px;
+}
+section .mov_row .mov_type--withdrawal{
+    padding: .2rem .8rem;
+    border-radius: 30px;
+    background-color: rgb(171, 22, 22);
+}
+section .summary{
+    flex: 50%;
+    align-items: flex-end;
+    border-left: 1px solid white; 
+    padding-left: 2rem;
+}
+section .summary .transfer-money input{
+    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+ 
+}
+section .summary .request-loan input{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+section .summary .close-account input{
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+}
+
+section .summary input{
+     padding: 2rem;
+     border-radius: 20px;
+     background: none;
+     border: none;
+}
+section .summary button{
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+}
+.footer{
+    margin-top: 6rem;
+   display: flex;
+   justify-content: space-evenly;
+}
+

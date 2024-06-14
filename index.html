@@ -13,7 +13,8 @@
 </head>
 <body>
    <header>
-      <h1>Log in to get started</h1>
+    
+      <h1>Log in to get started...</h1>
       
       <div class="side-btn">
         <input type="text" placeholder="USER">
@@ -24,33 +25,35 @@
 
    </header>
    <main class="container">
-      <div class="heading">
-         <h2>Current Balance</h2>
-         <p>As of 05/03/2030</p>
+       <div class="balance">
+        <div>
+            <p class="bal_label">Current Balance</p>
+         <p class = "bal_date">
+            As of<span class ="date"> 05/03/2030</span>
+         </p>
+        </div>
+        <p class="bal_val">0000$</p>
       </div>
-      <div class="balance">0000$</div>
+ 
       
    
    <section>
-      <!-- <div class="container grid-container">
-         <div class="grid-item"></div>
-         <div class="grid-item"><h1>asdrtgyujkbvb233</h1></div>
-         <div class="grid-item"><h1>asdrtgyujkb234</h1></div>
-         <div class="grid-item"><h1>asdrtgyujkb235</h1></div>
-         <div class="grid-item"><h1>asdrtgyujkb236</h1></div>
-         <div class="grid-item"><h1>asdrtgyujkb237</h1></div>
-      </div> -->
-      <div class="container">
-         <div class="transactions">
-             <div class="transaction deposit">7 DEPOSIT</div>
-             <div class="transaction withdrawal">6 WITHDRAWAL</div>
-             <div class="transaction withdrawal">5 WITHDRAWAL</div>
-             <div class="transaction deposit">4 DEPOSIT</div>
-             <div class="transaction withdrawal">3 WITHDRAWAL</div>
-             <div class="transaction deposit">2 DEPOSIT</div>
-             <div class="transaction deposit">1 DEPOSIT</div>
-         </div>
-         <div class="main-content">
+     <div class ="mov">
+        <div class="mov_row">
+        <div class="mov_type mov_type--deposit">2 deposit</div>
+        <div class = "mov_date">3 days ago</div>
+        <div class = "mov_val">4 000$</div>
+        </div>
+        <div class="mov_row">
+            <div class="mov_type mov_type--withdrawal">1 withdrawal
+
+            </div>
+            <div class="mov_date">24/01/2040</div>
+            <div class = "mov_value">-378$</div>
+        </div>
+     </div>
+      
+         <div class="summary">
              <div class="transfer-money">
                  <h2>Transfer money</h2>
                  <input type="text" placeholder="Transfer to">
@@ -69,15 +72,17 @@
                  <button>→</button>
              </div>
          </div>
-         <div class="footer">
-             <div>IN 0000$</div>
-             <div>OUT 0000$</div>
-             <div>INTEREST 0000$</div>
-             <div>SORT</div>
-             <div>You will be logged out in 05:00</div>
-         </div>
-     </div>
+       
+     </div> 
    </section>
    </main>
+   <div class="footer">
+    <div>IN 0000$</div>
+    <div>OUT 0000$</div>
+    <div>INTEREST 0000$</div>
+    <div>SORT</div>
+    <div>You will be logged out in 05:00</div>
+</div>
+   
 </body>
 </html>
